@@ -11,7 +11,7 @@
 
 <main>
 	<header>
-		<h1>음비티아이 테스트</h1>
+		<h1>🍗음BTI TEST🍚</h1>
 	</header>
 	<section>
 		<Router {routes} />
@@ -29,7 +29,6 @@
 
 	section {
         width: 60%;
-        border: 1px solid black;
         vertical-align: top;
         height: 800px;
         display: inline-block;
