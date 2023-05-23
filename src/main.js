@@ -7,8 +7,5 @@ const app = new App({
 	}
 });
 
-const question = new Question({
-	target: document.body
-});
 
 export default app;

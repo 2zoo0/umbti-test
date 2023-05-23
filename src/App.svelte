@@ -1,11 +1,14 @@
 <script>
+	import Question from './component/Question.svelte';
 	import Footer from './component/Footer.svelte';
 	import Index from './component/Index.svelte';
-	import Question from './component/Question.svelte'
+	import Result from './component/Result.svelte';
 	import Router from 'svelte-spa-router';
+
     const routes = {
-        '/':Index,
-        '/question':Question
+        '/' : Index,
+        '/result/:resultType' : Result,
+        '/question' : Question,
     }
 </script>
 

@@ -105,3 +105,20 @@ Then, from within your project folder:
 npm run build
 surge public my-project.surge.sh
 ```
+
+
+
+# 추가 23-05-23
+### If cannot found 'rollup'
+``` 
+rollup 버전은 최신버전은 3.23.0으로 변경
+
+npm install rollup --save-dev
+```
+
+### Question.svelte, Result.svelte 파일 추가
+```
+component
+├── Question.svelte
+└── Result.svelte
+```
