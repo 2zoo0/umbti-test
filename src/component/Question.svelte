@@ -1,5 +1,5 @@
 <script>
-	const questionArr = [
+	const questionBase = [
 		{"question" : "생각을 정리하고 자신의 내면과 깊이 있는 대화를 즐기는 편이냐"
 		, "a1" : "즐긴다"
 	    , "a2" : "아니다"
@@ -59,6 +59,9 @@
 				  lifestyle : 0
 				};
 
+	// 랜덤 섞기
+    const questionArr = questionBase.sort( () => Math.random() - 0.5 );
+
     let questionObj = questionArr.pop();		
 	let questionTxt = questionObj.question;
 	let aTxt1 = questionObj.a1;
@@ -78,6 +81,7 @@
 			type = questionObj.type;	
 			console.log(score)
 		} else {
+			// 3문제중 1개를 초과하면?
 			let energy    = score.energy     > 1 ? "I" : "E" ;
 			let infomation= score.infomation > 1 ? "S" : "N" ;
 			let decisions = score.decisions  > 1 ? "F" : "T" ;
